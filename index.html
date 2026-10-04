@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZYRO - Beyond the One | Legal Store & AI Advisor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header>
+        <div class="logo">ZYRO <span>"Beyond the One."</span></div>
+        <button class="sell-btn" onclick="alert('Dummy Sell action: Register partnership/company shares or list new items!')">Sell / Partner</button>
+    </header>
+
+    <!-- Hero / Case Overview Section -->
+    <section class="hero">
+        <h1>High-Performance Sportswear & Legal Compliance</h1>
+        <p>Explore ZYRO's official collection and test our interactive AI Legal Advisor trained on our business law case study (Partnership, Companies Act, Contract Act, Sale of Goods, & Negotiable Instruments).</p>
+    </section>
+
+    <!-- Product Grid -->
+    <main class="container">
+        <h2>Official Team Kits & Apparel</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <h3>National Club Home Jersey</h3>
+                <p class="price">Tk 900</p>
+                <p class="desc">Official home kit designed for Mirpur Strikers FC.</p>
+                <button onclick="alert('Dummy Buy action: Order placed under Sale of Goods Act (s.15)!')">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <h3>National Club Away Jersey</h3>
+                <p class="price">Tk 900</p>
+                <p class="desc">Official away kit with custom moisture-wicking fabric.</p>
+                <button onclick="alert('Dummy Buy action: Order placed under Sale of Goods Act (s.15)!')">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <h3>Small-Club Custom Kit</h3>
+                <p class="price">Tk 750</p>
+                <p class="desc">Customized performance jerseys for local tournaments.</p>
+                <button onclick="alert('Dummy Buy action: Order placed under Sale of Goods Act (s.15)!')">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <h3>Athlete Training Shorts</h3>
+                <p class="price">Tk 450</p>
+                <p class="desc">Durable athletic training wear built for heavy-duty use.</p>
+                <button onclick="alert('Dummy Buy action: Order placed under Sale of Goods Act (s.15)!')">Buy Now</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- AI Legal Advisor Chatbot Widget -->
+    <div class="chat-widget">
+        <button id="chat-toggle" onclick="toggleChat()">⚖️ Ask ZYRO AI Legal Advisor</button>
+        <div id="chat-container" class="chat-hidden">
+            <div class="chat-header">
+                <span>ZYRO Legal Advisor (Gemini)</span>
+                <button onclick="toggleChat()">✕</button>
+            </div>
+            <div id="chat-messages" class="chat-messages">
+                <div class="message bot-message">Hello! I am ZYRO's AI Legal Advisor. Ask me anything about our business setup (Partnership to ZYRO Ltd.), the double-booked kit crisis, TexSource defective goods, or bounced cheques under s.138!</div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="user-input" placeholder="Ask a legal or business question..." onkeypress="handleKeyPress(event)">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
