@@ -29,7 +29,7 @@ async function sendMessage() {
     chatMessages.scrollTop = chatMessages.scrollHeight;
 
     // Google Gemini API Configuration (Free Tier via Google AI Studio)
-    const API_KEY = 'YOUR_GEMINI_API_KEY'; // <-- Paste your AI Studio API key here
+    const API_KEY = 'AQ.Ab8RN6IFHHCXGm4ZWfo4FBbc4DXm1gVkU8fOBbzz_fVQf7abRg'; // <-- Paste your AI Studio API key here
     const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
 
     // System prompt giving persona and context of ZYRO's case study
